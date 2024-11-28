@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/singleReliabilityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Надійність одноколової системи"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/doubleReliabilityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Надійність двоколової системи"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/lossInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Очікувані збитки (грн)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="16dp" />
+</LinearLayout>
